@@ -1,0 +1,37 @@
+/* Main container styling */
+.main {
+    padding: 2rem;
+}
+
+/* Custom card styling */
+.stCard {
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Form styling */
+.stTextInput, .stSelectbox, .stMultiSelect {
+    margin-bottom: 1rem;
+}
+
+/* Progress bar styling */
+.stProgress {
+    height: 6px;
+    background-color: #e0e0e0;
+}
+
+/* Results container */
+.results-container {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+/* Custom button styling */
+.stButton>button {
+    width: 100%;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+}
