@@ -58,9 +58,18 @@ To run this project locally, follow these steps:
 * Make sure you have Python 3.8 or higher installed.
 
 **2. Clone the Repository**
-```bash
-git clone [https://github.com/your-username/career-path-guidance.git](https://github.com/your-username/career-path-guidance.git)
-cd career-path-guidance
-    * The **left column** displays the sorted list of careers. Each one is in an expandable box (`st.expander`) that shows the career description, growth potential, and a detailed breakdown of which skills and interests matched.
-    * The **right column** features the Plotly bar chart, providing an immediate visual summary of the top recommendations. Below the chart, an expander explains exactly how the match was calculated, ensuring transparency for the user.
-3.  **Final Actions**: The user is presented with a button to download a text file report and a "Start Over" button that resets the session state to its initial values, allowing for a fresh start.
+3. Create a Virtual Environment (Recommended):
+
+# For macOS/Linux
+python3 -m venv venv
+source venv/bin/activate
+
+# For Windows
+python -m venv venv
+venv\Scripts\activate
+
+4. Install Dependencies
+Create a requirements.txt file with the following content:
+streamlit
+pandas
+plotly
