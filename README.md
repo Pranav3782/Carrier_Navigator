@@ -42,31 +42,8 @@ The application's logic is straightforward and effective:
 3.  **Scoring**: The score is based on two key metrics:
     * **Skill Score**: The percentage of a career's required skills that you possess.
     * **Interest Score**: The percentage of a career's associated interests that you have.
-4.  **Final Score Calculation**: The overall match score is the average of the skill and interest scores:
-    ```latex
-    $$
-    \text{Total Score} = \frac{(\text{Skill Score} + \text{Interest Score})}{2}
-    $$
-    ```
+4.  **Final Score Calculation**: The overall match score is the average of the skill and interest scores.
 5.  **Results Display**: The careers are sorted by their final score and presented in a clean, two-column layout with detailed expanders and a summary chart.
-
-## 🚀 Getting Started
-
-To run this project locally, follow these steps:
-
-**1. Prerequisites**
-* Make sure you have Python 3.8 or higher installed.
-
-**2. Clone the Repository**
-3. Create a Virtual Environment (Recommended):
-
-# For macOS/Linux
-python3 -m venv venv
-source venv/bin/activate
-
-# For Windows
-python -m venv venv
-venv\Scripts\activate
 
 4. Install Dependencies
 Create a requirements.txt file with the following content:
