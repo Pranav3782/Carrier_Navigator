@@ -68,11 +68,7 @@ elif st.session_state.step == 2:
             INTERESTS_LIST,
             default=st.session_state.user_data.get("interests", [])
         )
-        experience = st.slider(
-            "Years of work experience",
-            0, 40, 
-            value=st.session_state.user_data.get("experience", 0)
-        )
+        
 
         col1, col2 = st.columns(2)
         with col1:
@@ -85,7 +81,7 @@ elif st.session_state.step == 2:
                     st.session_state.user_data.update({
                         "skills": skills,
                         "interests": interests,
-                        "experience": experience
+                        
                     })
                     st.session_state.step += 1
                     st.rerun()
@@ -177,7 +173,7 @@ elif st.session_state.step == 3:
     report = f"""Career Guidance Report for {st.session_state.user_data['name']}
 
 Education: {st.session_state.user_data['education']}
-Experience: {st.session_state.user_data['experience']} years
+
 
 Top Career Matches:
 {'-' * 50}"""
